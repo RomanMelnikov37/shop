@@ -34,3 +34,5 @@ Route::group(['prefix' => 'tags'], function() {
     Route::patch('/{tag}', \App\Http\Controllers\Tag\UpdateController::class)->name('tag.update');
     Route::delete('/{tag}', \App\Http\Controllers\Tag\DeleteController::class)->name('tag.delete');
 });
+
+Route::resource('colors', \App\Http\Controllers\ColorController::class);
