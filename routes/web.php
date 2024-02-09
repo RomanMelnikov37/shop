@@ -36,3 +36,4 @@ Route::group(['prefix' => 'tags'], function() {
 });
 
 Route::resource('colors', \App\Http\Controllers\ColorController::class);
+Route::resource('users', \App\Http\Controllers\UserController::class);
